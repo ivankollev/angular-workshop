@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-users-table',
@@ -12,14 +12,4 @@ export class UsersTableComponent {
     { id: 3, name: 'Clementine Bauch', username: 'Samantha', email: 'Nathan@yesenia.net', active: false, website: 'ramiro.info' },
     { id: 4, name: 'Patricia Lebsack', username: 'Karianne', email: 'Julianne.OConner@kory.org', active: true, website: 'kale.biz' }
   ];
-  @Output() showUserDetailsEvent: EventEmitter<any> = new EventEmitter();
-
-  constructor() { }
-
-  showUserDetails(userId: number) {
-    const selectedUser = this.users.find(user => user.id === userId);
-
-    this.showUserDetailsEvent.emit(selectedUser);
-  }
-
 }

@@ -3,7 +3,7 @@
     <tr>
       <th>ID</th>
       <th>Username</th>
-      <th>Show</th>
+      <th>Status</th>
     </tr>
   </thead>
   <tbody>
@@ -15,7 +15,8 @@
         <h3>{{ user.username }}</h3>
       </td>
       <td>
-        <button class="btn btn-secondary" (click)="showUserDetails(user.id)">Show Details</button>
+        <h3 *ngIf="user.active">Active</h3>
+        <h3 *ngIf="!user.active">Inactive</h3>
       </td>
     </tr>
   </tbody>

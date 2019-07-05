@@ -30,10 +30,10 @@
     ]
   ```
 * Your task is to populate a table with the entities from the users array you just defined.
-* Use ***ngFor** to display the user id and username.
-* Your goal is to show the active users and hide the inactive. In order to do that:
-    1. Use ***ngIf** to conditionally display each user.
-    2. Use the active property that each user object has defined.
+* Use ***ngFor** to display the user id, username and user status.
+* In order to display the user status:
+    1. Use ***ngIf** to conditionally display 'Active' or 'Inactive'.
+    2. Use the active property that each user object has defined to achieve the goal.
 
 ## :trollface: Task 3
 * In this task you have to display the details of the selected user.
