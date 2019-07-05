@@ -1,0 +1,22 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Username</th>
+      <th>Show</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>
+        <h3>{{ user.id }}</h3>
+      </td>
+      <td>
+        <h3>{{ user.username }}</h3>
+      </td>
+      <td>
+        <button class="btn btn-secondary" (click)="showUserDetails(user.id)">Show Details</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
