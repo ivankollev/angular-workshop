@@ -42,7 +42,7 @@
 * In the Users Table Component template:
     1. Add a 'Show Details' button for each user.
     2. Add an event listener to the newly created button, which triggers the function for showing the details of the user.
-    3. Pass the user as a parameter.
+    3. Pass the user id as a parameter.
 
 * In the Users Table Component:
     1. Define an event emitter using the Output annotation in order to notify the App Component when the 'Show Details' button has been clicked.
